@@ -5,8 +5,8 @@ Example for creating a new windows AMI. Largerly based on this [example](https:/
 # Dependencies
 
 1. The following is already installed:
- - Packer version 1.6.6
- - Ansible
+    - Packer version 1.6.6
+    - Ansible
 2. Your AWS credentials are configured with correct permissions for EC2 
 
 <br/>
@@ -15,7 +15,7 @@ Example for creating a new windows AMI. Largerly based on this [example](https:/
 
 Run build command:
 
-    `packer build windows-server.pkr.hcl`
+`packer build windows-server.pkr.hcl`
 
 This does the following:
 
