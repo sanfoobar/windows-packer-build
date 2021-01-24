@@ -1,12 +1,11 @@
 # Windows packer example (with ansible)
 Example for creating a new windows AMI. Largerly based on this [example](https://learn.hashicorp.com/tutorials/packer/getting-started-build-image) by hashi corp.
 
-# Dependencies
+# Installation
 
-1. The following is already installed:
-    - Packer version 1.6.6
-    - Ansible
-2. Your AWS credentials are configured with correct permissions for EC2 
+1. Packer version 1.6.6
+2. Ansible
+3. Your AWS credentials are configured with correct permissions for EC2 
 
 # Creating a new server
 
