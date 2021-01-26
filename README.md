@@ -4,7 +4,7 @@ Example for creating a new windows AMI. Largerly based on this [example](https:/
 # Installation
 
 1. Packer version 1.6.6
-2. Ansible
+2. Ansible version 2.9.6
 3. Your AWS credentials are configured with correct permissions for EC2 
 
 # Creating a new server
@@ -17,4 +17,4 @@ This does the following:
 
 1. Find and lanuches a windows AMI
 2. Bootstrap EC2 with user-data. Our user-data is bootstrap_win.ps1.
-3. Run our Ansible playbook the newly created EC2  
+3. Run our Ansible playbook the newly created EC2
