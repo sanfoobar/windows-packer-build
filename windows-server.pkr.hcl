@@ -40,7 +40,8 @@ build {
     user = "Administrator"
     use_proxy = false
     extra_arguments = [
-      "-e", "ansible_winrm_server_cert_validation=ignore"
+      "-e", "ansible_winrm_server_cert_validation=ignore",
+      "-vvv"
     ]
   }
 }

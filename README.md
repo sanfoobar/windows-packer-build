@@ -5,9 +5,10 @@ Example for creating a new windows AMI. Largerly based on this [example](https:/
 
 1. Packer version 1.6.6
 2. Ansible version 2.9.6
-    - Windows ansible module must be installed as well:
+    - The following ansible galaxy collections must be installed:
     
         `ansible-galaxy collection install ansible.windows`
+        `ansible-galaxy collection install chocolatey.chocolatey`
 
 3. Your AWS credentials are configured with correct permissions for EC2 
 
