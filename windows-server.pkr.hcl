@@ -21,7 +21,7 @@ source "amazon-ebs" "windows" {
     most_recent = true
     owners      = ["amazon"]
   }
-  user_data_file = "./bootstrap_win.ps1"
+  user_data_file = "./bootstrap_win.txt"
   
   communicator = "winrm"
   winrm_username = "Administrator"
@@ -34,12 +34,13 @@ source "amazon-ebs" "windows" {
 build {
   sources = ["source.amazon-ebs.windows"]
 
-  /*
+  
   provisioner "ansible" {
     playbook_file = "win-playbook.yaml"
     user = "Administrator"
-  }
-  */
-  provisioner "windows-restart" {
+    use_proxy = false
+    extra_arguments = [
+      "-e", "ansible_winrm_server_cert_validation=ignore"
+    ]
   }
 }
