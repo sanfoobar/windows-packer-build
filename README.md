@@ -8,6 +8,7 @@ Example for creating a new windows AMI. Largerly based on this [example](https:/
     - The following ansible galaxy collections must be installed:
     
         `ansible-galaxy collection install ansible.windows`
+        
         `ansible-galaxy collection install chocolatey.chocolatey`
 
 3. Your AWS credentials are configured with correct permissions for EC2 
@@ -21,5 +22,5 @@ Run build command:
 This does the following:
 
 1. Find and lanuches a windows AMI
-2. Bootstrap EC2 with user-data. Our user-data is bootstrap_win.ps1.
+2. Bootstrap EC2 with user-data. Our user-data is bootstrap_win.ps1
 3. Run our Ansible playbook the newly created EC2
