@@ -1,5 +1,5 @@
 # Windows packer build
-Example for creating a new windows AMI. Largerly based on this [example](https://learn.hashicorp.com/tutorials/packer/getting-started-build-image) by hashi corp.
+Example for creating a new windows AMI. Based on this [example](https://learn.hashicorp.com/tutorials/packer/getting-started-build-image) by hashi corp.
 
 # Installation
 
